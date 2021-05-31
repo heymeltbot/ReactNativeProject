@@ -5,7 +5,7 @@ import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 const HomeScreen = ({ navigation }) => {
   return (
     <View>
-      <Text style={styles.text}>YourMom</Text>
+      <Text style={styles.text}>An App</Text>
       {/* can pass string to prop w/o curlies */}
       <Button
         onPress={() => navigation.navigate("Components")}
@@ -26,6 +26,10 @@ const HomeScreen = ({ navigation }) => {
       <Button
         onPress={() => navigation.navigate("Color")}
         title="Go To Color Demo"
+      />
+      <Button
+        onPress={() => navigation.navigate("Modify")}
+        title="Go To Color Modify Demo"
       />
     </View>
   );
