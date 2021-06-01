@@ -87,6 +87,8 @@ const ColorModifyScreen = () => {
     <View>
       <ColorAdjuster
         onIncrease={() =>
+          //community convention uses type and payload, rather than colortochange and amount
+          //type: change_red, payload: COLOR_INCREMENT
           dispatch({ colorToChange: "red", amount: COLOR_INCREMENT })
         }
         onDecrease={() =>
